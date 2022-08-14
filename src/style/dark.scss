@@ -1,0 +1,154 @@
+.app.dark {
+    background-color: #111;
+
+    .sidebar {
+        background-color: #111;
+
+    }
+
+    .card {
+        background-color: #111;
+
+        .bottom {
+            .title {
+                color: white;
+            }
+        }
+    }
+
+    .caart {
+        .top {
+            color: white;
+        }
+
+        ul {
+            color: white;
+        }
+
+        .bottom {
+            color: white;
+
+            .checkout {
+                background-color: #111;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        display: flex;
+
+        .homeContainer {
+            flex: 5;
+
+
+
+            .cartAndDishes {
+                .dishes {
+                    .filter {
+                        .left {
+                            color: white;
+
+                            .icon {
+
+                                select {
+                                    color: white !important;
+                                    background-color: #111 !important;
+
+
+                                }
+
+
+
+                            }
+                        }
+
+                        .right {
+                            .sort {
+                                span {
+                                    select {
+                                        color: white !important;
+                                        background-color: #111 !important;
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkoutPage {
+        background-color: #111;
+
+        .caartCheckout {
+            .topCheckout {
+                color: white;
+            }
+
+            .leftCheckout {
+                .title {
+                    color: white;
+
+
+                }
+            }
+
+            .rightCheckout {
+                color: white;
+            }
+
+            .priceCheckout {
+
+                color: white;
+            }
+
+            .bottomCheckout {
+                .pay {
+                    color: white;
+                    background-color: #111;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+
+                        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .titleCheckout {
+        background-color: #111;
+        color: white;
+    }
+
+    .cartTitle {
+        color: white;
+    }
+
+    .card {
+        background-color: #111 !important;
+    }
+}

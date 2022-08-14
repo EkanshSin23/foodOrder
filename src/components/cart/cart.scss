@@ -1,0 +1,206 @@
+.cartTitle {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.caart {
+
+    margin: 20px;
+    padding: 10px;
+
+    .top {
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .center {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .left {
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 33px;
+                height: 33px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            p {
+                text-align: center;
+                background-color: pink;
+                border-radius: 8px;
+                font-size: 8px;
+                padding: 2px;
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .adddel {
+                display: flex;
+                align-items: center;
+
+                border: 1px solid green;
+                border-radius: 20px;
+
+                height: 20px;
+                margin-right: 5px;
+
+                .quanti {
+                    font-size: 15px;
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    font-size: 20px;
+                    margin: 0px 4px;
+
+                }
+
+                .add {
+                    color: green;
+                }
+
+                .del {
+                    color: red;
+                }
+
+            }
+
+
+
+
+        }
+
+        .price {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            font-size: 15px;
+            font-weight: bold;
+
+            .clear {
+
+                margin-left: 10px;
+
+                button {
+                    border: none;
+                    background: none;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    font-size: 12px;
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    .bottom {
+        .total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 20px;
+
+            .totalTitle {
+                font-size: 15px;
+            }
+
+            .totalPrice {
+                font-weight: bold;
+            }
+        }
+
+        .checkout {
+            text-align: center;
+            margin: 15px;
+            background-color: rgb(38, 181, 38);
+            padding: 5px;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            color: white;
+
+            span {
+                color: white;
+            }
+
+            &:hover {
+                background-color: white;
+                color: black;
+
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+                span {
+                    color: black;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .center {
+        .left {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .title {
+                font-size: 10px;
+
+                p {
+                    font-size: 6px;
+                }
+            }
+        }
+
+        .right {
+            .adddel {
+                height: 5px;
+
+
+
+
+
+            }
+
+            .price {
+                font-size: 10px;
+            }
+        }
+    }
+}

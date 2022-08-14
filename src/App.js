@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import { useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { CartProvider } from 'react-use-cart';
 import './App.css';
+import { DarkModeContext } from './context/darkMode';
+import Checkout from './pages/checkout/Checkout';
+import Home from './pages/home/Home';
+import './style/dark.scss'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const { darkMode } = useContext(DarkModeContext)
+  return (<>
+    <div className={darkMode ? "app dark" : "app"}>
+      <CartProvider>
+        <Routes>
+          <Route path='/' >
+            <Route index element={<Home />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Route>
+        </Routes>
+
+
+      </CartProvider>
     </div>
+
+
+  </>
   );
 }
 

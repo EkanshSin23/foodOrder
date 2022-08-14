@@ -1,0 +1,114 @@
+.home {
+    display: flex;
+
+    .homeContainer {
+        flex: 5;
+
+
+
+        .cartAndDishes {
+            display: flex;
+            margin-top: 30px;
+            // border-left: 1px solid black;
+
+
+
+
+            .dishes {
+                flex: 4;
+                display: flex;
+                padding: 20px;
+                gap: 30px;
+                flex-wrap: wrap;
+                position: relative;
+
+                .filter {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+
+                    .left {
+                        display: flex;
+                        align-items: center;
+                        color: gray;
+
+                        .icon {
+                            margin-left: 5px;
+
+
+                            select {
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                background-color: transparent;
+                                text-align: center;
+                            }
+                        }
+
+                    }
+
+                    .right {
+                        .sort {
+
+                            display: flex;
+                            align-items: center;
+                            color: gray;
+
+                            span {
+                                color: black;
+                                margin-left: 4px;
+
+                                select {
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+
+
+
+
+
+            }
+
+            .cart {
+                flex: 1.5;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .dishes {
+        justify-content: space-around !important;
+    }
+
+
+}
+
+@media screen and (max-width:980px) {
+    .filter {
+        flex-direction: column !important;
+
+        .left {
+            font-size: 10px;
+        }
+
+        .right {
+            .sort {
+                font-size: 10px;
+            }
+        }
+    }
+}

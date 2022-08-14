@@ -1,0 +1,122 @@
+.sidebar {
+    flex: 1;
+
+    background-color: rgba(38, 181, 38, 0.849);
+    // background-color: rgba(255, 192, 203, 0.119);
+
+    border-right: 1px solid gray;
+    min-height: 100vh;
+
+
+
+    .top {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+
+
+
+
+        // height: 80px
+
+
+
+        .search {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border: 0.5px solid white;
+            border-radius: 8px;
+            padding: 8px;
+            color: white;
+
+
+            input {
+                border: none !important;
+                outline: none;
+                background: transparent;
+
+
+                &::placeholder {
+                    font-size: 16px;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .center {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                font-size: 18px;
+                color: white;
+                font-weight: 300;
+                margin: 20px;
+                padding: 10px;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                .sideicon {
+                    margin-right: 8px;
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    border-radius: 5px;
+                    // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                }
+
+
+            }
+
+
+
+
+        }
+
+
+    }
+
+
+    .bottom {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        margin: 20px;
+        gap: 20px;
+
+        .dark,
+        .light {
+            height: 30px;
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        .dark {
+            background-color: #111;
+            border: 1px solid white;
+        }
+
+        .light {
+            background-color: white;
+            border: 1px solid #111;
+        }
+    }
+}
